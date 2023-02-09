@@ -1,0 +1,37 @@
+@use "../Utils/variables" as *;
+@use "../Utils/mixins";
+
+/* Navbar */
+
+  .navbar{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 0 4rem;
+    @media #{$mq-small}{
+        margin: 0 2rem;
+    }
+    &__img{
+        max-height: 75px;
+        max-width: 200px;
+        @media #{$mq-small}{
+            max-width: 140px;;
+        } 
+    }
+    &__links{
+        margin-left: auto;
+        &__a{
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $orange;
+            @media #{$mq-small}{
+                font-size: 12px;
+            }
+            &:hover, :active{
+                text-decoration: underline;
+            }
+        }
+    }
+  }
+  

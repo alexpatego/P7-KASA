@@ -1,0 +1,14 @@
+@use "../Utils/variables"as *;
+@use "../Utils/mixins";
+
+/* Footer */
+
+.footer {
+    background-color: $black;
+    color: $white;
+    padding-top: 2rem;
+    @include mixins.flex-center-column;
+    img {
+        margin:1rem 0;
+    }
+  }

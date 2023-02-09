@@ -1,0 +1,23 @@
+@use "../Utils/variables"as *;
+@use "../Utils/mixins";
+
+.product__host{
+    margin-left: auto;
+    &__infos{
+    font-weight:600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width : min-content;
+        &__img{
+        border-radius: 50%;
+        height: 4rem;
+        }
+    }
+    }
+
+.product__rate{
+   display: flex;
+   align-items: flex-start;
+}
+   

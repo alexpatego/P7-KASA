@@ -1,0 +1,33 @@
+/* Colors */
+
+$orange: #FF6060;
+$grey: #F6F6F6;
+$white: #FFFFFF;
+$black: #000000;
+$profile: #C4C4C4;
+$stars: #E3E3E3;
+
+// Breakpoints
+$bp-small: 768px; 
+$bp-medium: 1024px;
+$bp-large: 1366px; 
+$bp-xlarge: 1920px; 
+$bp-xxlarge: 2560px; 
+
+// Media Queries max-width
+$mq-small: "(max-width: #{$bp-small})";
+$mq-medium: "(max-width: #{$bp-medium})";
+$mq-large: "(max-width: #{$bp-large})";
+$mq-xlarge: "(max-width: #{$bp-xlarge})";
+$mq-xxlarge: "(max-width: #{$bp-xxlarge})";
+
+// Media Queries max-width Card Home
+$bp-card: 964px;
+$mq-card: "(max-width: #{$bp-card})"; 
+
+// Media Queries min-width
+$miq-small: "(min-width: #{$bp-small})";
+$miq-medium: "(min-width: #{$bp-medium})";
+$miq-large: "(min-width: #{$bp-large})";
+$miq-xlarge: "(min-width: #{$bp-xlarge})";
+$miq-xxlarge: "(min-width: #{$bp-xxlarge})";

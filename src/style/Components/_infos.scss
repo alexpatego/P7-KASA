@@ -1,0 +1,47 @@
+@use "../Utils/variables"as *;
+@use "../Utils/mixins";
+
+/* product informations */
+
+.product__infos{
+    margin: 0rem 4rem;
+    font-weight: 500;
+    color: $orange;
+    display: flex;
+    flex-direction: row;
+    @media #{$mq-small}{
+       
+        margin: 0rem 2rem;
+    }
+    &__titlelocationtags{
+        flex-direction: column;
+    }
+    &__title{
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+        @media #{$mq-small}{
+            font-size: 1.5rem;
+        }
+    }
+    &__location{
+        font-size: 1.2rem;
+        @media #{$mq-small}{
+            font-size: 1rem;
+        }
+    }
+    &__tags{
+        color: $white;
+        @media #{$mq-small}{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 0;
+        }
+        &__tag{
+            padding: 0.25rem;
+            margin-right: 1rem;
+            border-radius: 0.5rem;
+            background-color: $orange;
+        }
+    }
+}

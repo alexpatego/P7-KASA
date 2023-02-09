@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Background from "../../assets/Background.png";
+import HomeBanner from "../../components/HomeBanner/HomeBanner";
 import HomeCard from "../../components/HomeCard/HomeCard.jsx";
 
 const Home = () => {
@@ -19,16 +19,16 @@ const Home = () => {
 
   return (
     <div>
-      <img src={Background} alt="Background"></img>
-      <h2>Chez vous, partout et ailleurs</h2>
-      {/* Banner */}
-      {data.map((logement, id) => (
-        <div key={id}>
-          <Link to={`/logements/${logement.id}`}>
-            <HomeCard cover={logement.cover} title={logement.title} />
-          </Link>
-        </div>
-      ))}
+      <HomeBanner />
+      <div className="HomeContainer">
+        {data.map((logement, id) => (
+          <div className="HomeContainer__cards" key={id}>
+            <Link to={`/logements/${logement.id}`}>
+              <HomeCard cover={logement.cover} title={logement.title} />
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

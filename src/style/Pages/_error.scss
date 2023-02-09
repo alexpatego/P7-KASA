@@ -1,0 +1,34 @@
+@use "../Utils/variables" as *;
+@use "../Utils/mixins";
+
+/* Error */
+.error{
+    @include mixins.flex-center-column;
+    color: $orange;
+    overflow: hidden;
+    &__title {
+        font-size: 25rem;
+        margin:2rem;
+        @media #{$mq-small} {
+            font-size: 10rem;
+        }
+        @media #{$mq-medium} and #{$miq-small} {
+            font-size: 15rem;
+        }
+    }
+    &__subtitle{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        @media #{$mq-small} {
+            font-size: 1.2rem;
+        }
+    }
+    &__redirect{
+        color: $orange;
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+        @media #{$mq-small} {
+            font-size: 1rem;
+        }
+    }
+}

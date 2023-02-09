@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import bgabout from "../../assets/aboutbg.jpg";
-import AboutCard from "../../components/AboutCard/AboutCard";
+import Collapse from "../../components/Collapse/Collapse";
 
 const About = () => {
   const [about, setAbout] = useState([]);
@@ -8,7 +8,6 @@ const About = () => {
   const description = async () => {
     const response = await fetch("http://localhost:8000/about");
     const data = await response.json();
-
     setAbout(data);
   };
 
@@ -17,11 +16,11 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      <img src={bgabout} className="imgbanner" alt="bannière" />
-      <div className="AboutPage">
+    <div className="about">
+      <img src={bgabout} className="about__img" alt="bannière" />
+      <div className="about__infos">
         {about.map((about) => (
-          <AboutCard about={about} />
+          <Collapse title={about.title}>{about.description}</Collapse>
         ))}
       </div>
     </div>

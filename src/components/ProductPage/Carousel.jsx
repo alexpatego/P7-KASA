@@ -19,23 +19,29 @@ const Carrousel = ({ slides }) => {
   }
 
   return (
-    <div className="carousel-container">
+    <div>
       <img
         src={VectorLeft}
         alt="Précedent"
         onClick={prevSlide}
-        className="leftArrow"
+        className="product__carousel__leftArrow"
       />
-      <img src={slides[current]} alt="appartement" />
-      <span className="slide-number">
-        {current + 1}/{length}
-      </span>
       <img
         src={VectorRight}
         alt="Suivant"
-        onClick={nextSlide}
-        className="rightArrow"
+        onClick={() => {
+          nextSlide();
+        }}
+        className="product__carousel__rightArrow"
       />
+      <img
+        className="product__carousel__img"
+        src={slides[current]}
+        alt="appartement"
+      />
+      <span className="product__carousel__number">
+        {current + 1}/{length}
+      </span>
     </div>
   );
 };
