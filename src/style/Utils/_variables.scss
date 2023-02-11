@@ -8,6 +8,7 @@ $profile: #C4C4C4;
 $stars: #E3E3E3;
 
 // Breakpoints
+$bp-mini: 400px;
 $bp-small: 768px; 
 $bp-medium: 1024px;
 $bp-large: 1366px; 
@@ -15,6 +16,7 @@ $bp-xlarge: 1920px;
 $bp-xxlarge: 2560px; 
 
 // Media Queries max-width
+$mq-mini: "(max-width: #{$bp-mini})";
 $mq-small: "(max-width: #{$bp-small})";
 $mq-medium: "(max-width: #{$bp-medium})";
 $mq-large: "(max-width: #{$bp-large})";
@@ -31,3 +33,12 @@ $miq-medium: "(min-width: #{$bp-medium})";
 $miq-large: "(min-width: #{$bp-large})";
 $miq-xlarge: "(min-width: #{$bp-xlarge})";
 $miq-xxlarge: "(min-width: #{$bp-xxlarge})";
+
+@keyframes fade-in-out {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

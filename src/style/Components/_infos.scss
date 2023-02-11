@@ -1,47 +1,39 @@
 @use "../Utils/variables"as *;
 @use "../Utils/mixins";
 
-/* product informations */
+/* infos */
 
-.product__infos{
-    margin: 0rem 4rem;
-    font-weight: 500;
+.product__infos {
     color: $orange;
-    display: flex;
-    flex-direction: row;
-    @media #{$mq-small}{
-       
-        margin: 0rem 2rem;
+    @include mixins.flex-column;
+    justify-content: space-between;
+    margin: 0 2rem;
+    @media #{$miq-small}{
+        flex-direction: row;
+        align-items: flex-end; 
+        margin: 0 4rem;
     }
-    &__titlelocationtags{
+    &__container{
         flex-direction: column;
+        & h1{
+            margin: 1rem 0 0.5rem 0;
+            font-size: 3rem;
+            font-weight: 500;
+            @media #{$mq-small}{
+                font-size: 2rem;
+            }
+        }
+        & h3{
+            margin: 0 0 1rem 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            @media #{$mq-small}{
+                font-size: 1rem; 
+            } 
+        }
     }
     &__title{
-        margin: 1rem 0;
-        font-size: 2.5rem;
-        font-weight: 500;
-        @media #{$mq-small}{
-            font-size: 1.5rem;
-        }
+        @include mixins.flex-column;
     }
-    &__location{
-        font-size: 1.2rem;
-        @media #{$mq-small}{
-            font-size: 1rem;
-        }
-    }
-    &__tags{
-        color: $white;
-        @media #{$mq-small}{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem 0;
-        }
-        &__tag{
-            padding: 0.25rem;
-            margin-right: 1rem;
-            border-radius: 0.5rem;
-            background-color: $orange;
-        }
-    }
+
 }

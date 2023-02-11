@@ -3,7 +3,8 @@
 
 /* Error */
 .error{
-    @include mixins.flex-center-column;
+    @include mixins.flex-column;
+    align-items: center;
     color: $orange;
     overflow: hidden;
     &__title {

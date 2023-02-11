@@ -15,6 +15,7 @@ const Home = () => {
       console.log(data);
     };
     logementCard();
+    document.title = "Kasa";
   }, []);
 
   return (

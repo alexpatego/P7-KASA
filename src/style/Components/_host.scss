@@ -1,23 +1,56 @@
 @use "../Utils/variables"as *;
 @use "../Utils/mixins";
 
-.product__host{
-    margin-left: auto;
-    &__infos{
-    font-weight:600;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width : min-content;
-        &__img{
-        border-radius: 50%;
-        height: 4rem;
-        }
-    }
-    }
 
-.product__rate{
-   display: flex;
-   align-items: flex-start;
+/* host */ 
+
+.product__host{
+    flex-direction: column;
+    justify-content: center;
+    @media #{$mq-small}{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: -1rem;
+    }
+    &__infos{
+        margin-bottom: 2rem;
+        @media #{$mq-small}{
+            margin-bottom: 0;
+        }
+        &__details{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: -0.5rem;
+        }
+        &__name{
+            width : min-content;
+            text-align: right;
+            font-size: 1.2rem;
+            font-weight: 500;
+            @media #{$mq-small}{
+                font-size: 1rem;
+            }
+        }
+        &__picture{
+            margin-left: 1rem;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            @media #{$mq-small}{
+                width: 3rem;
+                height: 3rem;
+            }
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }    
+
 }
-   
+
+

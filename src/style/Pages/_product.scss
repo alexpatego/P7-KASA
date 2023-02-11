@@ -2,9 +2,10 @@
 @use "../Utils/mixins" ;
 
 .product_container {
+    align-items: center;
+    justify-content: center;
+    @include mixins.flex-column;
 }
-
-
 
 .equipments__list{
     list-style: none;

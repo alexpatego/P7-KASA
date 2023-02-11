@@ -1,2 +1,37 @@
 @use "../Utils/variables"as *;
 @use "../Utils/mixins";
+
+/* rating */
+
+.product__rating{
+    display: flex;
+    align-items: flex-start;
+    &__rate{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        width: 12rem;
+        height: 2rem;
+        @media #{$mq-small}{
+            width: 8rem;
+            height: 1.5rem;
+        }
+        @media #{$mq-mini}{
+            width: 5rem;
+            height: 1rem; 
+        }    
+        & img{
+            width: 2rem;
+            height: 2rem;   
+            @media #{$mq-small}{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            @media #{$mq-mini}{
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+}
+

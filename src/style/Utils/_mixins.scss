@@ -1,7 +1,17 @@
 @use "./variables";
 
-@mixin flex-center-column {
+@mixin flex-column {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;   
+}
+
+@mixin flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -9,19 +9,25 @@
     }
     &__div{
       padding: 0 10px;
+      height: 3rem;
       color: $white;
-      display: flex;
-      justify-content: space-between;
-      place-items: center;
+      @include mixins.flex-between-center;
       border-radius: 0.5rem;
       background-color: $orange;
       &__arrow{
         height: 1rem;
         width: 1.5rem;
+        @media #{$mq-small}{
+        height: 0.9rem;
+        width: 1.2rem;
+        }
       }
       &__title{
         font-weight: 500;
         font-size: 1.2rem;
+        @media #{$mq-small}{
+          font-size: 1.1rem;
+        }
       }
       &__description{
       margin: 0;
@@ -29,9 +35,15 @@
       font-size: 1.2rem;
       padding: 1.5rem;
       color: $orange;
-      background-color: $grey ;
+      background-color: $grey;
+      @media #{$mq-small}{
+        font-size: 1rem;
+      }
       }
     }
+    &__comp{
+        transition: opacity 0.3s ease-in-out; 
+      }
   }
 
 /* Collapse Product */
@@ -42,8 +54,7 @@
     gap: 2rem;
     grid-template-columns: 50% 50%;
     @media #{$mq-small}{
-      display: flex;
-      flex-direction: column;
+      @include mixins.flex-column;
       margin: 2rem 0;
       gap: 0;
     }

@@ -28,10 +28,29 @@
             @media #{$mq-small}{
                 font-size: 12px;
             }
-            &:hover, :active{
+            &:hover, :active, :focus{
                 text-decoration: underline;
             }
         }
     }
   }
-  
+
+
+  .navbar__links__a.active{
+    text-decoration: underline;
+}
+
+
+.navbar__links__a{
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $orange;
+        @media #{$mq-small}{
+            font-size: 12px;
+        }
+        &:hover, :active, :focus{
+            text-decoration: underline;
+        }
+    }
+

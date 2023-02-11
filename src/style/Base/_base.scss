@@ -9,3 +9,19 @@ body {
   margin: 0;
 }
 
+/* Effects and animations */
+
+.vectorDown {
+  transition: transform 0.3s ease-in-out;
+}
+.vectorUp {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-in-out;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-1 {
+  opacity: 1;
+}
+

@@ -13,6 +13,7 @@ const About = () => {
 
   useEffect(() => {
     description();
+    document.title = "A propos";
   }, []);
 
   return (

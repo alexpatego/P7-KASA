@@ -8,7 +8,7 @@
     position: relative;
     text-align: center;
     color: $white;
-    margin: 2rem 4rem 0 4rem;
+    margin: 0rem 4rem;
     @media #{$mq-small}{
         margin: 0 2rem;
     }
@@ -38,8 +38,9 @@
         object-position: center;
         width: 100%;
         height: 25rem;
-        border-radius: 2rem;
-    }
+        border-radius: 2rem;  
+        // transition: opacity 0.8s ease-in-out;
+    } 
   }
 
 
