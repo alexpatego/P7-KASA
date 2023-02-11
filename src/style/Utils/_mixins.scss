@@ -1,13 +1,11 @@
 @use "./variables";
 
 // Darkening images
-
 @mixin darkening {
     filter:brightness(75%);
 }
 
 // Grid-columns comments
-
 @mixin grid-columns {
     display: grid;
     grid-template-columns: 50% 50%;
