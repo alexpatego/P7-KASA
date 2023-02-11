@@ -1,5 +1,4 @@
 /* Colors */
-
 $orange: #FF6060;
 $grey: #F6F6F6;
 $white: #FFFFFF;
@@ -34,11 +33,3 @@ $miq-large: "(min-width: #{$bp-large})";
 $miq-xlarge: "(min-width: #{$bp-xlarge})";
 $miq-xxlarge: "(min-width: #{$bp-xxlarge})";
 
-@keyframes fade-in-out {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }

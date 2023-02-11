@@ -4,11 +4,11 @@
 /* rating */
 
 .product__rating{
-    display: flex;
-    align-items: flex-start;
+    @include mixins.flexbox;
+    @include mixins.align-items(flex-start);
     &__rate{
-        display: flex;
-        justify-content: space-between;
+        @include mixins.flexbox;
+        @include mixins.justify-content(space-between);
         margin-top: 1rem;
         width: 12rem;
         height: 2rem;

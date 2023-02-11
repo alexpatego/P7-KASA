@@ -6,13 +6,14 @@
 
 .product__infos{
     &__tags{
-        @include mixins.flex-wrap;
+        @include mixins.flexbox;
+        @include mixins.flex-wrap(wrap);
         color: $white;
     }
     &__tag{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixins.flexbox;
+        @include mixins.align-items(center);
+        @include mixins.justify-content(center);
         background: $orange;
         margin-top: 0.5rem;
         border-radius: 0.5rem;

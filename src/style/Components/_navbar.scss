@@ -4,8 +4,8 @@
 /* Navbar */
 
   .navbar{
-    display: flex;
-    align-items: center;
+    @include mixins.flexbox;
+    @include mixins.align-items(center);
     padding: 2rem 0;
     margin: 0 4rem;
     @media #{$mq-small}{
@@ -31,26 +31,10 @@
             &:hover, :active, :focus{
                 text-decoration: underline;
             }
+            &.active{
+                text-decoration: underline;
+            }
         }
     }
   }
-
-
-  .navbar__links__a.active{
-    text-decoration: underline;
-}
-
-
-.navbar__links__a{
-        margin: 0 10px;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: $orange;
-        @media #{$mq-small}{
-            font-size: 12px;
-        }
-        &:hover, :active, :focus{
-            text-decoration: underline;
-        }
-    }
 

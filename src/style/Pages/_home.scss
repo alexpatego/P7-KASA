@@ -11,12 +11,12 @@
     padding: 4rem;
     border-radius: 2rem;
     background-color: $grey;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include mixins.flexbox;
+    @include mixins.flex-wrap(wrap);
+    @include mixins.flexbox;
     gap: 3rem;
     &__cards{
-        display: flex;
+        @include mixins.flexbox;
         position: relative;
         text-align: left;
         border-radius: 2rem;
@@ -28,7 +28,7 @@
             min-height: 18rem;
             border-radius: 1rem;
             width: 360px;
-            filter:brightness(75%);
+            @include mixins.darkening;
             @media #{$mq-card}{
                 width: 100%;
             }

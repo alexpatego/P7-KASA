@@ -12,8 +12,7 @@
         margin: 0 2rem;
     }
     &__img{
-        object-fit: cover;
-        object-position: center;
+        @include mixins.object-fit-center;
         width: 100%;
         max-height: 15rem;
         min-height: 10rem;

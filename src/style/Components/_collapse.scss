@@ -11,7 +11,9 @@
       padding: 0 10px;
       height: 3rem;
       color: $white;
-      @include mixins.flex-between-center;
+      @include mixins.flexbox;
+      @include mixins.justify-content(space-between);
+      place-items: center;
       border-radius: 0.5rem;
       background-color: $orange;
       &__arrow{
@@ -49,12 +51,12 @@
 /* Collapse Product */
 
 .product__collapse {
-    display: grid;
+    @include mixins.grid-columns;
     margin: 2rem 6rem 2rem 4rem;
-    gap: 2rem;
-    grid-template-columns: 50% 50%;
+    gap: 2rem;  
     @media #{$mq-small}{
-      @include mixins.flex-column;
+      @include mixins.flexbox;
+      @include mixins.flex-direction(column);
       margin: 2rem 0;
       gap: 0;
     }

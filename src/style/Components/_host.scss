@@ -5,12 +5,13 @@
 /* host */ 
 
 .product__host{
-    flex-direction: column;
-    justify-content: center;
+    @include mixins.flexbox;
+    @include mixins.flex-direction(column);
+    @include mixins.justify-content(center);
     @media #{$mq-small}{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        @include mixins.flexbox;
+        @include mixins.flex-direction(row-reverse);
+        @include mixins.justify-content(space-between);
         margin-bottom: -1rem;
     }
     &__infos{
@@ -19,9 +20,9 @@
             margin-bottom: 0;
         }
         &__details{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+            @include mixins.flexbox;
+            @include mixins.align-items(center);
+            @include mixins.justify-content(flex-end);
             margin-top: -0.5rem;
         }
         &__name{
@@ -46,7 +47,7 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
-                object-fit: cover;
+                @include mixins.object-fit-center;
             }
         }
     }    

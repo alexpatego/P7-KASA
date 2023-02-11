@@ -10,16 +10,15 @@
     }
     &__img{
         width: 100%;
-        object-fit: cover;
-        object-position: center;
-        filter:brightness(85%);
+        @include mixins.object-fit-center;
+        @include mixins.darkening;
         max-height: 15rem;
         border-radius: 2rem;
     }
     &__infos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include mixins.flexbox;
+        @include mixins.flex-direction(column);
+        @include mixins.justify-content(center);
         margin: 1rem 0;
         @media #{$mq-small}{
           margin: 1rem -2rem;    

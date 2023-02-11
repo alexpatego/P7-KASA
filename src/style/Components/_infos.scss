@@ -5,16 +5,17 @@
 
 .product__infos {
     color: $orange;
-    @include mixins.flex-column;
-    justify-content: space-between;
+    @include mixins.flexbox;
+    @include mixins.flex-direction(column);
+    @include mixins.justify-content(space-between);
     margin: 0 2rem;
     @media #{$miq-small}{
         flex-direction: row;
-        align-items: flex-end; 
+        @include mixins.align-items(flex-end);
         margin: 0 4rem;
     }
     &__container{
-        flex-direction: column;
+        @include mixins.flex-direction(column);
         & h1{
             margin: 1rem 0 0.5rem 0;
             font-size: 3rem;
@@ -33,7 +34,7 @@
         }
     }
     &__title{
-        @include mixins.flex-column;
+        @include mixins.flex-direction(column);
     }
 
 }
