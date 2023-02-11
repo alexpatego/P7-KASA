@@ -28,7 +28,7 @@
     &__rightArrow, &__leftArrow{
         position: absolute;
         cursor: pointer;
-        top: 43%;
+        top: 42%;
         @media #{$mq-small}{
             height: 3rem;
         }
@@ -36,7 +36,7 @@
     &__img{
         @include mixins.object-fit-center;
         width: 100%;
-        height: 25rem;
+        height: 25.2rem;
         border-radius: 2rem;  
     } 
   }

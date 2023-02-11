@@ -17,7 +17,7 @@
     &__container{
         @include mixins.flex-direction(column);
         & h1{
-            margin: 1rem 0 0.5rem 0;
+            margin: 1rem 0;
             font-size: 3rem;
             font-weight: 500;
             @media #{$mq-small}{
@@ -25,7 +25,7 @@
             }
         }
         & h3{
-            margin: 0 0 1rem 0;
+            margin: 1rem 0;
             font-size: 1.2rem;
             font-weight: 500;
             @media #{$mq-small}{
