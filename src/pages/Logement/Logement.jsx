@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import ProductHost from "../../components/ProductPage/ProductHost";
-import ProductRating from "../../components/ProductPage/ProductRating";
-import Carousel from "../../components/ProductPage/Carousel";
+import ProductHost from "../../components/Host/Host";
+import ProductRating from "../../components/Rating/Rating";
+import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/Collapse";
-import Tag from "../../components/ProductPage/Tag";
+import Tag from "../../components/Tag/Tag";
 import Error from "../../components/Error/Error";
 
 const SingleProduct = () => {
