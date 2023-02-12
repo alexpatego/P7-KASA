@@ -20,8 +20,10 @@ const About = () => {
     <div className="about">
       <img src={bgabout} className="about__img" alt="bannière" />
       <div className="about__infos">
-        {about.map((about) => (
-          <Collapse title={about.title}>{about.description}</Collapse>
+        {about.map((about, i) => (
+          <Collapse title={about.title} key={i}>
+            {about.description}
+          </Collapse>
         ))}
       </div>
     </div>

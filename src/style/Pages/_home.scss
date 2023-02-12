@@ -3,7 +3,7 @@
 
 .HomeContainer {
     @media #{$mq-small}{
-        margin: 0rem;
+        margin: 2rem 0rem;
         padding: 2rem;
         border-radius: 0rem;
     }
@@ -27,7 +27,7 @@
         &__img{
             min-height: 18rem;
             border-radius: 1rem;
-            width: 360px;
+            width: 375px;
             @include mixins.darkening;
             @media #{$mq-card}{
                 width: 100%;

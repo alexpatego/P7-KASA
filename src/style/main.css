@@ -679,7 +679,7 @@ a {
 }
 @media (max-width: 768px) {
   .HomeContainer {
-    margin: 0rem;
+    margin: 2rem 0rem;
     padding: 2rem;
     border-radius: 0rem;
   }
@@ -701,7 +701,7 @@ a {
 .HomeContainer__cards__img {
   min-height: 18rem;
   border-radius: 1rem;
-  width: 360px;
+  width: 375px;
   filter: brightness(75%);
 }
 @media (max-width: 964px) {

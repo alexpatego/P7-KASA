@@ -12,7 +12,6 @@ const Home = () => {
       const data = await response.json();
 
       setData(data);
-      console.log(data);
     };
     logementCard();
     document.title = "Kasa";
@@ -22,8 +21,8 @@ const Home = () => {
     <div>
       <Banner />
       <div className="HomeContainer">
-        {data.map((logement, id) => (
-          <div className="HomeContainer__cards" key={id}>
+        {data.map((logement, i) => (
+          <div className="HomeContainer__cards" key={i}>
             <Link to={`/logements/${logement.id}`}>
               <Card cover={logement.cover} title={logement.title} />
             </Link>
