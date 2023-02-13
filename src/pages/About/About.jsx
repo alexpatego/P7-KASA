@@ -5,15 +5,15 @@ import Collapse from "../../components/Collapse/Collapse";
 const About = () => {
   const [about, setAbout] = useState([]);
 
-  const description = async () => {
-    const response = await fetch("http://localhost:8000/about");
-    const data = await response.json();
-    setAbout(data);
-  };
-
+  //fetch des données depuis un json-server, les données de about on été ajoutés dans le fichier db.json
   useEffect(() => {
+    const description = async () => {
+      const response = await fetch("http://localhost:8000/about");
+      const data = await response.json();
+      setAbout(data);
+    };
     description();
-    document.title = "A propos";
+    document.title = "A propos"; // on affiche le titre de la page sur la fenêtre
   }, []);
 
   return (

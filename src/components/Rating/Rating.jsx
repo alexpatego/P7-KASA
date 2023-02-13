@@ -9,7 +9,7 @@ const ProductRating = (props) => {
     <div className="product__rating__rate">
       {range.map((rangeElem, i) =>
         rangeElem <= props.rating ? (
-          <img src={fullStar} alt="étoile" key={i} />
+          <img src={fullStar} alt="étoile" key={i} /> // image FullStar ou emptyStar en fonction de la note récupère sur le serveur et passé en props
         ) : (
           <img src={emptyStar} alt="pas étoilé" key={i} />
         )

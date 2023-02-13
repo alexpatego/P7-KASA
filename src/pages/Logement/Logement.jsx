@@ -10,8 +10,9 @@ import Error from "../../components/Error/Error";
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { id } = useParams();
+  const { id } = useParams(); //id de la page
 
+  // fetch des données depuis le db.json grâce à json-server et à l'utilisation de useParams pour ciblé les ids
   useEffect(() => {
     fetch(`http://localhost:8000/logements/${id}`)
       .then((response) => {
@@ -25,16 +26,17 @@ const SingleProduct = () => {
 
   useEffect(() => {
     if (!loading) {
-      document.title = product.title || "Kasa - Appartement";
+      document.title = product.title || "Kasa - Appartement"; // on récupère le titre de l'appartement pour l'afficher sur la fenêtre
     }
   }, [loading, product.title]);
 
   // Conditions pour affichage des pages et éviter les faux ids
 
-  if (loading) return null;
+  if (loading) return null; // utilisation d'un loading pour éviter de retourner undefined
   if (id !== product.id) {
     return <Error />;
   }
+  // renvoi la page Error si logement est invalide
 
   const equipments = product.equipments.map((i, index) => (
     <li className="equipments__list" key={index}>
@@ -54,8 +56,8 @@ const SingleProduct = () => {
             <h3>{product.location}</h3>
           </div>
           <div className="product__infos__tags">
-            {product.tags.map((tag) => (
-              <Tag tag={tag} />
+            {product.tags.map((tag, i) => (
+              <Tag tag={tag} key={i} />
             ))}
           </div>
         </div>

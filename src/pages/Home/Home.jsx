@@ -6,6 +6,7 @@ import Card from "../../components/Card/Card.jsx";
 const Home = () => {
   const [data, setData] = useState([]);
 
+  // on fetch les données depuis le db.json grâce à json-server
   useEffect(() => {
     const logementCard = async () => {
       const response = await fetch("http://localhost:8000/logements");
@@ -14,7 +15,7 @@ const Home = () => {
       setData(data);
     };
     logementCard();
-    document.title = "Kasa";
+    document.title = "Kasa"; // on affiche le titre du site sur la fenêtre
   }, []);
 
   return (

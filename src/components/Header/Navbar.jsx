@@ -3,6 +3,7 @@ import logo from "../../assets/LOGO.png";
 
 const Navbar = () => {
   const location = useLocation();
+  // permet de reload la page si on clique sur la même section sur la laquelle on est présent
   const handleReload = (path) => {
     if (window.location.pathname === path) {
       window.location.reload();
@@ -15,7 +16,7 @@ const Navbar = () => {
       <div className="navbar__links">
         <Link
           className={`navbar__links__a ${
-            location.pathname === "/" ? "active" : ""
+            location.pathname === "/" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
           }`}
           to="/"
           onClick={() => handleReload("/")}
@@ -24,7 +25,7 @@ const Navbar = () => {
         </Link>
         <Link
           className={`navbar__links__a ${
-            location.pathname === "/a-propos" ? "active" : ""
+            location.pathname === "/a-propos" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
           }`}
           to="/a-propos"
           onClick={() => handleReload("/a-propos")}

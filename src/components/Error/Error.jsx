@@ -7,6 +7,7 @@ const Error = () => {
       <h2 className="error__subtitle">
         Oups! La page que vous demandez n'existe pas.
       </h2>
+      {/* renvoie un lien vers la page d'accueil */}
       <Link className="error__redirect" to="/">
         Retourner sur la page d'accueil
       </Link>

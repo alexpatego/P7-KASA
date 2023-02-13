@@ -3,9 +3,10 @@ import VectorLeft from "../../assets/VectorLeft.png";
 import VectorRight from "../../assets/VectorRight.png";
 
 const Carrousel = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const [opacity, setOpacity] = useState(1);
-  const [transition, setTransition] = useState(false);
+  const [current, setCurrent] = useState(0); // index de slides commence à 0
+  const [opacity, setOpacity] = useState(1); // gérer l'opacity qui commence avec une valeur de 1
+  const [transition, setTransition] = useState(false); // gérer les transitions entre les slides
+  const length = slides.length; // longueur du tableau des slides
 
   useEffect(() => {
     setTransition(true);
@@ -14,12 +15,10 @@ const Carrousel = ({ slides }) => {
     }, 0);
   }, [current]);
 
-  const length = slides.length;
-
   const nextSlide = () => {
     setOpacity(0);
     setTimeout(() => {
-      setCurrent(current === length - 1 ? 0 : current + 1);
+      setCurrent(current === length - 1 ? 0 : current + 1); // on ajoute 1 au tableau des slides et on repart au premier quand on arrive à la fin
       setTransition(false);
     }, 200);
   };
@@ -27,7 +26,7 @@ const Carrousel = ({ slides }) => {
   const prevSlide = () => {
     setOpacity(0);
     setTimeout(() => {
-      setCurrent(current === 0 ? length - 1 : current - 1);
+      setCurrent(current === 0 ? length - 1 : current - 1); // on ajoute -1 au tableau des slides et on repart au dernier quand on arrive au premier
       setTransition(false);
     }, 200);
   };
@@ -38,7 +37,7 @@ const Carrousel = ({ slides }) => {
 
   return (
     <div>
-      {length > 1 && (
+      {length > 1 && ( //si longueur du table > 1, les flêches sont disponibles
         <>
           <img
             src={VectorLeft}
@@ -59,7 +58,7 @@ const Carrousel = ({ slides }) => {
       <img
         style={{
           opacity: opacity,
-          transition: transition ? "opacity 0.2s ease-in-out" : "none",
+          transition: transition ? "opacity 0.2s ease-in-out" : "none", // permet de gérer l'opacity et la transition entre chaque changement de slides
         }}
         className="product__carousel__img"
         src={slides[current]}

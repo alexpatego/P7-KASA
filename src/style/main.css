@@ -8,10 +8,6 @@ body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* Effects and animations */
 .vectorDown {
   transition: transform 0.3s ease-in-out;

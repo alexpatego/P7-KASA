@@ -3,12 +3,12 @@ import React, { useEffect } from "react";
 
 const ErrorPage = () => {
   useEffect(() => {
-    document.title = "Page not found";
+    document.title = "Page not found"; // on affiche un titre à la page sur la fenêtre
   });
 
   return (
     <>
-      <Error />
+      <Error /> {/* récupère le component Erreur */}
     </>
   );
 };
