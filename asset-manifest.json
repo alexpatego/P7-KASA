@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//alexpatego.github.io/P7-KASA/static/css/main.17050aca.css",
+    "main.js": "//alexpatego.github.io/P7-KASA/static/js/main.b6888496.js",
+    "static/media/aboutbg.jpg": "//alexpatego.github.io/P7-KASA/static/media/aboutbg.161cc9194b8fa99b3ed4.jpg",
+    "static/media/Background.png": "//alexpatego.github.io/P7-KASA/static/media/Background.efc1935eb81fc5e585f9.png",
+    "index.html": "//alexpatego.github.io/P7-KASA/index.html",
+    "main.17050aca.css.map": "//alexpatego.github.io/P7-KASA/static/css/main.17050aca.css.map",
+    "main.b6888496.js.map": "//alexpatego.github.io/P7-KASA/static/js/main.b6888496.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17050aca.css",
+    "static/js/main.b6888496.js"
+  ]
+}
