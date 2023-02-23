@@ -12,9 +12,13 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/a-propos" element={<About />} />
-        <Route exact path="/logements/:id" element={<SingleProduct />} />
+        <Route exact path="/KASA-P7" element={<Home />} />
+        <Route exact path="/KASA-P7/a-propos" element={<About />} />
+        <Route
+          exact
+          path="/KASA-P7/logements/:id"
+          element={<SingleProduct />}
+        />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navbar__links">
         <Link
           className={`navbar__links__a ${
-            location.pathname === "/" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
+            location.pathname === "/KASA-P7" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
           }`}
           to="/"
           onClick={() => handleReload("/")}
@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
         <Link
           className={`navbar__links__a ${
-            location.pathname === "/a-propos" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
+            location.pathname === "/KASA-P7/a-propos" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
           }`}
           to="/a-propos"
           onClick={() => handleReload("/a-propos")}
