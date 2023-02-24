@@ -19,7 +19,7 @@ const Navbar = () => {
             location.pathname === "/P7-KASA/" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
           }`}
           to="/"
-          onClick={() => handleReload("/")}
+          onClick={() => handleReload("/P7-KASA/")}
         >
           Accueil
         </Link>
