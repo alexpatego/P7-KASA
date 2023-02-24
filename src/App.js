@@ -12,11 +12,11 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/KASA-P7" element={<Home />} />
-        <Route exact path="/KASA-P7/a-propos" element={<About />} />
+        <Route exact path="/P7-KASA/" element={<Home />} />
+        <Route exact path="/P7-KASA/a-propos" element={<About />} />
         <Route
           exact
-          path="/KASA-P7/logements/:id"
+          path="/P7-KASA/logements/:id"
           element={<SingleProduct />}
         />
         <Route path="*" element={<ErrorPage />} />
