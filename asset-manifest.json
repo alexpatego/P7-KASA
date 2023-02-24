@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "//alexpatego.github.io/static/css/main.17050aca.css",
-    "main.js": "//alexpatego.github.io/static/js/main.de94fe9f.js",
-    "static/media/aboutbg.jpg": "//alexpatego.github.io/static/media/aboutbg.161cc9194b8fa99b3ed4.jpg",
-    "static/media/Background.png": "//alexpatego.github.io/static/media/Background.efc1935eb81fc5e585f9.png",
-    "index.html": "//alexpatego.github.io/index.html",
-    "main.17050aca.css.map": "//alexpatego.github.io/static/css/main.17050aca.css.map",
-    "main.de94fe9f.js.map": "//alexpatego.github.io/static/js/main.de94fe9f.js.map"
+    "main.css": "//alexpatego.github.io/P7-KASA/static/css/main.17050aca.css",
+    "main.js": "//alexpatego.github.io/P7-KASA/static/js/main.964e999a.js",
+    "static/media/aboutbg.jpg": "//alexpatego.github.io/P7-KASA/static/media/aboutbg.161cc9194b8fa99b3ed4.jpg",
+    "static/media/Background.png": "//alexpatego.github.io/P7-KASA/static/media/Background.efc1935eb81fc5e585f9.png",
+    "index.html": "//alexpatego.github.io/P7-KASA/index.html",
+    "main.17050aca.css.map": "//alexpatego.github.io/P7-KASA/static/css/main.17050aca.css.map",
+    "main.964e999a.js.map": "//alexpatego.github.io/P7-KASA/static/js/main.964e999a.js.map"
   },
   "entrypoints": [
     "static/css/main.17050aca.css",
-    "static/js/main.de94fe9f.js"
+    "static/js/main.964e999a.js"
   ]
 }
