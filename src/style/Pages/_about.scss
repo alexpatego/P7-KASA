@@ -5,6 +5,7 @@
 
 .about{
     margin: 0 4rem;
+    min-height: 71vh;
     @media #{$mq-small}{
         margin: 0 2rem;    
     }

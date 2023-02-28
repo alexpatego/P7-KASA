@@ -613,6 +613,7 @@ body {
 /* About page */
 .about {
   margin: 0 4rem;
+  min-height: 71vh;
 }
 @media (max-width: 768px) {
   .about {

@@ -16,10 +16,10 @@ const Navbar = () => {
       <div className="navbar__links">
         <Link
           className={`navbar__links__a ${
-            location.pathname === "/P7-KASA/" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
+            location.pathname === "/" ? "active" : "" // permet d'ajouter un style underline quand on se trouve dans une section
           }`}
           to="/"
-          onClick={() => handleReload("/P7-KASA/")}
+          onClick={() => handleReload("/")}
         >
           Accueil
         </Link>
